@@ -1,5 +1,5 @@
 /* ============================================================
-   teach — Quiz widget (zero dependencies)
+   lys-teach — Quiz widget (zero dependencies)
    Tight feedback loop for retrieval practice: the learner clicks
    an option and finds out instantly whether it was right.
 

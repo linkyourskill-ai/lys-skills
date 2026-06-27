@@ -8,15 +8,15 @@
 
 | Skill | What it does |
 |---|---|
-| [`teach`](./teach) | Turns the current directory into a **stateful teaching workspace**. The agent grounds every lesson in your real-world *mission*, gathers high-trust resources, and produces beautiful, self-contained HTML lessons — built on the **LinkYourSkill Design System** ("Dark Cosmic"). It tracks what you've learned across sessions via learning records and a glossary, and balances knowledge, skills, and wisdom. |
+| [`lys-teach`](./lys-teach) | Turns the current directory into a **stateful teaching workspace**. The agent grounds every lesson in your real-world *mission*, gathers high-trust resources, and produces beautiful, self-contained HTML lessons — built on the **LinkYourSkill Design System** ("Dark Cosmic"). It tracks what you've learned across sessions via learning records and a glossary, and balances knowledge, skills, and wisdom. |
 
-### `teach` at a glance
+### `lys-teach` at a glance
 
 - **Mission-grounded** — every lesson traces back to *why* you want to learn the topic (`MISSION.md`).
 - **High-trust knowledge** — sourced from curated resources (`RESOURCES.md`), never from parametric guesses.
 - **Durable skills** — interactive quizzes and tasks designed for storage strength: retrieval practice, spacing, interleaving.
 - **Stateful across sessions** — learning records (`./learning-records/`) and a `GLOSSARY.md` track your zone of proximal development.
-- **Beautiful by default** — lessons and reference docs ship the bundled [LinkYourSkill Design System](./teach/design-system) (tokens, the Inter typeface, glass cards on a cosmic backdrop, the violet brand gradient, ready-made teaching components).
+- **Beautiful by default** — lessons and reference docs ship the bundled [LinkYourSkill Design System](./lys-teach/design-system) (tokens, the Inter typeface, glass cards on a cosmic backdrop, the violet brand gradient, ready-made teaching components).
 
 ## Installation
 
@@ -28,23 +28,23 @@ Clone the repo and copy any skill into your agent's skills directory.
 git clone https://github.com/linkyourskill-ai/lys-skills.git
 
 # Personal: available in every project
-cp -R lys-skills/teach ~/.claude/skills/teach
+cp -R lys-skills/lys-teach ~/.claude/skills/lys-teach
 
 # Or project-scoped: shared with your repo
-cp -R lys-skills/teach /path/to/your/project/.claude/skills/teach
+cp -R lys-skills/lys-teach /path/to/your/project/.claude/skills/lys-teach
 ```
 
 Then in Claude Code, invoke it:
 
 ```
-/teach What would you like to learn about?
+/lys-teach What would you like to learn about?
 ```
 
 ## Repository layout
 
 ```
 lys-skills/
-  teach/                       ← the teaching skill
+  lys-teach/                   ← the teaching skill
     SKILL.md                   ← skill definition and instructions
     MISSION-FORMAT.md          ← format guides for the workspace state files
     RESOURCES-FORMAT.md
@@ -62,11 +62,11 @@ lys-skills/
 
 ## About LinkYourSkill
 
-[LinkYourSkill](https://github.com/linkyourskill-ai) is the AI-to-Human task-execution platform: when an AI agent hits the limits of what it can do digitally, it delegates physical, real-world tasks to verified human **Skillanbieter** through LinkYourSkill. It is German-first and EU/DSGVO-compliant. The design system bundled in `teach` is the brand foundation for that product.
+[LinkYourSkill](https://github.com/linkyourskill-ai) is the AI-to-Human task-execution platform: when an AI agent hits the limits of what it can do digitally, it delegates physical, real-world tasks to verified human **Skillanbieter** through LinkYourSkill. It is German-first and EU/DSGVO-compliant. The design system bundled in `lys-teach` is the brand foundation for that product.
 
 ## Contributing
 
-Each new skill is a top-level directory with its own `SKILL.md`. Keep skills self-contained, reuse the design system where visuals are involved, and follow the brand voice documented in [`teach/design-system/DESIGN-SYSTEM.md`](./teach/design-system/DESIGN-SYSTEM.md).
+Each new skill is a top-level directory with its own `SKILL.md`. Keep skills self-contained, reuse the design system where visuals are involved, and follow the brand voice documented in [`lys-teach/design-system/DESIGN-SYSTEM.md`](./lys-teach/design-system/DESIGN-SYSTEM.md).
 
 ## License
 

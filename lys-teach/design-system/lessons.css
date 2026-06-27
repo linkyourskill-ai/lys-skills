@@ -1,5 +1,5 @@
 /* ============================================================
-   teach — Lesson & reference stylesheet
+   lys-teach — Lesson & reference stylesheet
    Built ON TOP OF the LinkYourSkill Design System ("Dark Cosmic").
 
    Every lesson (./lessons/*.html) and reference document
@@ -223,7 +223,7 @@ body::after {               /* bottom-left nebula */
 
 /* ============================================================
    Primary source — the single best resource to read/watch next.
-   teach: every lesson recommends one high-trust primary source.
+   lys-teach: every lesson recommends one high-trust primary source.
    ============================================================ */
 
 .primary-source {
@@ -350,7 +350,7 @@ body::after {               /* bottom-left nebula */
 
 /* ============================================================
    Footer navigation — previous / next lesson + reference links.
-   Lessons interlink via anchors (teach: a connected course, not
+   Lessons interlink via anchors (lys-teach: a connected course, not
    a pile of one-offs).
    ============================================================ */
 

@@ -1,8 +1,8 @@
-# LinkYourSkill Design System — for `teach`
+# LinkYourSkill Design System — for `lys-teach`
 
 Every lesson and reference document this skill produces is built on the
 **LinkYourSkill Design System** ("Dark Cosmic"). This folder is the
-self-contained copy that `teach` ships with.
+self-contained copy that `lys-teach` ships with.
 Source: <https://github.com/linkyourskill-ai/lys-design-system>.
 
 The point: a learner returns to these lessons again and again, so they must
@@ -18,7 +18,7 @@ design-system/
   tokens/               ← CSS custom properties: colors, typography, spacing, effects, fonts, base.
   README.md             ← the full upstream brand guide (product context, voice, foundations).
 
-  lessons.css           ← teach's shared stylesheet. Imports styles.css, adds the
+  lessons.css           ← lys-teach's shared stylesheet. Imports styles.css, adds the
                           teaching components. THIS is the file lessons link.
   quiz.js               ← zero-dependency retrieval-practice quiz widget.
   lesson-template.html  ← a starter lesson in the full LinkYourSkill brand. Copy it.
